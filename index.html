@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة البضائع</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>إدارة البضائع</h1>
+        <form id="productForm">
+            <label for="productName">اسم البضاعة:</label>
+            <input type="text" id="productName" required>
+            
+            <label for="amount">المبلغ:</label>
+            <input type="number" id="amount" required>
+            
+            <label for="quantity">الكمية:</label>
+            <input type="number" id="quantity" required>
+            
+            <label for="date">التاريخ:</label>
+            <input type="date" id="date" required>
+            
+            <button type="submit">إضافة</button>
+        </form>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>اسم البضاعة</th>
+                    <th>المبلغ</th>
+                    <th>الكمية</th>
+                    <th>التاريخ</th>
+                    <th>إجراءات</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="total">
+            <span>إجمالي المبلغ:</span>
+            <span id="totalAmount">0</span>
+        </div>
+        <button id="clearAll">حذف الكل</button>
+        <div class='Right'>
+            <h2>
+                   جميع الحقوق محفوظه الى
+            </h2>
+            <p> 2024 &copy; fullstack web Developer: OS SPHERE</p>
+          </div>
+    </div>
+
+    
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
